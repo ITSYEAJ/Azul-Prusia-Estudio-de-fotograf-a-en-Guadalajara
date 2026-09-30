@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azul Prusia | Estudio de fotografía en Guadalajara</title>
+  <meta name="description" content="Fotografía de retrato, bodas, familia y producto en la colonia Americana de Guadalajara. Recorre el portafolio, cotiza en línea y aparta tu fecha.">
+  <meta name="theme-color" content="#1B3A6B">
+  <link rel="icon" href="../img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/pagina4.js" defer></script>
+</head>
+<body class="pagina-foto">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cabecera" id="inicio">
+    <div class="barra" id="barra">
+      <div class="barra__fila">
+        <a class="marca" href="#inicio" aria-label="Azul Prusia, inicio">
+          <svg class="marca__icono" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="27" fill="none" stroke="currentColor" stroke-width="3"/>
+            <g class="marca__hojas">
+              <path d="M32 21 45.5 13.2M41.5 26.5 40 10.4M41.5 37.5 54 28.6M32 43 18.5 50.8M22.5 37.5 24 53.6M22.5 26.5 10 35.4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            </g>
+            <circle cx="32" cy="32" r="8" fill="var(--color-3)"/>
+          </svg>
+          <span class="marca__texto">Azul Prusia</span>
+        </a>
+
+        <button class="menu-boton" id="menuBoton" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="menu" aria-label="Principal">
+          <ul class="nav__lista">
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#retoque">Retoque</a></li>
+            <li><a href="#sesiones">Sesiones</a></li>
+            <li><a href="#cotiza">Cotiza</a></li>
+            <li><a class="nav__destacado" href="#reserva">Aparta tu fecha</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="foto-banner">
+      <canvas class="foto-banner__lienzo" id="banner" width="1600" height="640" role="img" aria-label="Azul Prusia. Retrato, bodas y producto con luz natural en Guadalajara."></canvas>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="foto-intro" aria-labelledby="introTitulo">
+      <div class="contenedor foto-intro__rejilla">
+        <div class="foto-intro__texto">
+          <h1 class="foto-titular" id="introTitulo"><span class="palabra">Fotos</span> <span class="palabra">con</span> <span class="palabra">luz</span> <span class="palabra">natural</span> <span class="palabra">que</span> <span class="palabra">se</span> <span class="palabra">parecen</span> <span class="palabra">a</span> <span class="palabra">ti,</span> <span class="palabra">no</span> <span class="palabra">a</span> <span class="palabra">un</span> <span class="palabra">filtro.</span></h1>
+          <p class="entrada">Somos un estudio pequeño en la colonia Americana. Hacemos retrato, bodas civiles, sesiones familiares y fotografía de producto para marcas locales. Entregamos una galería privada en diez días hábiles y respondemos cada cotización el mismo día.</p>
+          <div class="acciones">
+            <a class="boton boton--primario" href="#portafolio">Recorrer el portafolio</a>
+            <a class="boton boton--linea" href="#cotiza">Cotizar mi sesión</a>
+          </div>
+        </div>
+        <aside class="foto-boleto" aria-labelledby="disponibleTitulo">
+          <h2 class="foto-boleto__titulo" id="disponibleTitulo">Próxima fecha libre</h2>
+          <p class="foto-boleto__fecha" id="proximaFecha">Consultando el calendario</p>
+          <p class="foto-boleto__nota" id="proximaNota">Los sábados se apartan con unas tres semanas de anticipación.</p>
+          <a class="enlace-flecha" href="#reserva">Ver todas las fechas</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="foto-portafolio" id="portafolio" aria-labelledby="portafolioTitulo">
+      <div class="contenedor foto-portafolio__cabeza">
+        <div>
+          <h2 class="seccion__titulo" id="portafolioTitulo">Portafolio</h2>
+          <p>Once fotos recientes. Sigue bajando y la pared avanza sola; cada foto se revela cuando entra en cuadro. Haz clic en cualquiera para verla completa con los datos de la toma.</p>
+        </div>
+        <div class="filtros" role="group" aria-label="Filtrar el portafolio por tipo de sesión">
+          <button class="filtro" type="button" data-filtro="todo" aria-pressed="true">Todo <span class="filtro__conteo">11</span></button>
+          <button class="filtro" type="button" data-filtro="retrato" aria-pressed="false">Retrato <span class="filtro__conteo">3</span></button>
+          <button class="filtro" type="button" data-filtro="bodas" aria-pressed="false">Bodas <span class="filtro__conteo">3</span></button>
+          <button class="filtro" type="button" data-filtro="producto" aria-pressed="false">Producto <span class="filtro__conteo">3</span></button>
+          <button class="filtro" type="button" data-filtro="familia" aria-pressed="false">Familia <span class="filtro__conteo">2</span></button>
+        </div>
+      </div>
+      <p class="visually-hidden" id="galeriaEstado" aria-live="polite"></p>
+
+      <div class="muro muro--libre" id="muro">
+        <div class="muro__fijo" id="muroFijo">
+          <div class="muro__pista" id="pista">
+            <figure class="foto-pieza foto-pieza--vertical" data-categoria="retrato" data-lente="35 mm" data-apertura="f/1.8" data-velocidad="1/125 s" data-iso="1600">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/retrato-ventana.svg" alt="Mujer de espaldas mirando la ciudad por una ventana al anochecer" width="800" height="1000">
+              </button>
+              <figcaption><strong>Daniela, retrato en su departamento</strong><span>Providencia, Guadalajara</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--vertical foto-pieza--baja" data-categoria="bodas" data-lente="50 mm" data-apertura="f/2.8" data-velocidad="1/320 s" data-iso="200">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/boda-arco.svg" alt="Pareja de novios tomados de la mano bajo un arco colonial adornado con papel picado" width="800" height="1000">
+              </button>
+              <figcaption><strong>Boda civil de Mariana y Leo</strong><span>Centro de Tlaquepaque</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--cuadrada foto-pieza--alta" data-categoria="producto" data-lente="90 mm" data-apertura="f/8" data-velocidad="1/160 s" data-iso="100">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/producto-cafe.svg" alt="Bolsa de café de especialidad junto a una taza con arte latte sobre fondo ámbar" width="1000" height="1000">
+              </button>
+              <figcaption><strong>Tueste Norte, catálogo de café</strong><span>En estudio</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--horizontal foto-pieza--baja" data-categoria="familia" data-lente="85 mm" data-apertura="f/2" data-velocidad="1/1000 s" data-iso="200">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/familia-parque.svg" alt="Familia caminando de la mano con su perro durante la hora dorada" width="1200" height="800">
+              </button>
+              <figcaption><strong>Familia Robles y su perro Chato</strong><span>Bosque Los Colomos</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--horizontal foto-pieza--alta" data-categoria="retrato" data-lente="24 mm" data-apertura="f/5.6" data-velocidad="1/250 s" data-iso="400">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/retrato-agave.svg" alt="Hombre con sombrero de espaldas frente a un campo de agave y el volcán al atardecer" width="1200" height="800">
+              </button>
+              <figcaption><strong>Don Efraín, jimador</strong><span>Tequila, Jalisco</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--cuadrada" data-categoria="bodas" data-lente="100 mm macro" data-apertura="f/4" data-velocidad="1/200 s" data-iso="800">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/boda-anillos.svg" alt="Dos anillos de oro sobre terciopelo con luces desenfocadas al fondo" width="1000" height="1000">
+              </button>
+              <figcaption><strong>Anillos de Sofía y Emilio</strong><span>Zapopan</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--vertical foto-pieza--baja" data-categoria="producto" data-lente="90 mm" data-apertura="f/11" data-velocidad="1/160 s" data-iso="100">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/producto-perfume.svg" alt="Frasco de perfume color ámbar sobre un pedestal con fondo turquesa" width="800" height="1000">
+              </button>
+              <figcaption><strong>Ámbar 07, lanzamiento de perfume</strong><span>En estudio</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--vertical foto-pieza--alta" data-categoria="retrato" data-lente="85 mm" data-apertura="f/1.8" data-velocidad="1/2000 s" data-iso="100">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/retrato-contraluz.svg" alt="Perfil de un hombre a contraluz con el sol poniéndose detrás" width="800" height="1000">
+              </button>
+              <figcaption><strong>Andrés, fotos para su portafolio de actor</strong><span>Barranca de Huentitán</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--horizontal" data-categoria="bodas" data-lente="35 mm" data-apertura="f/1.4" data-velocidad="1/160 s" data-iso="3200">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/boda-luces.svg" alt="Pareja bailando de noche bajo varias líneas de foquitos" width="1200" height="800">
+              </button>
+              <figcaption><strong>Primer baile de Karla y Julián</strong><span>Hacienda en Tlajomulco</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--horizontal foto-pieza--baja" data-categoria="producto" data-lente="50 mm" data-apertura="f/8" data-velocidad="1/60 s" data-iso="200">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/producto-ceramica.svg" alt="Jarro de barro bruñido decorado a mano sobre una mesa de madera" width="1200" height="800">
+              </button>
+              <figcaption><strong>Taller Barro Vivo, piezas de Tonalá</strong><span>Tonalá, Jalisco</span></figcaption>
+            </figure>
+            <figure class="foto-pieza foto-pieza--vertical foto-pieza--alta" data-categoria="familia" data-lente="50 mm" data-apertura="f/2.8" data-velocidad="1/1600 s" data-iso="200">
+              <button class="foto-pieza__boton" type="button">
+                <img src="../img/familia-columpio.svg" alt="Niña columpiándose bajo un árbol grande al atardecer" width="800" height="1000">
+              </button>
+              <figcaption><strong>Regina, cinco años</strong><span>Malecón de Ajijic</span></figcaption>
+            </figure>
+            <div class="muro__final">
+              <p>¿Te imaginas en la siguiente?</p>
+              <a class="boton boton--primario" href="#cotiza">Cotizar mi sesión</a>
+            </div>
+          </div>
+          <div class="muro__pie contenedor" aria-hidden="true">
+            <span class="muro__conteo" id="muroConteo">1 / 11</span>
+            <span class="muro__barra"><span id="muroBarra"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--oscura foto-retoque" id="retoque" aria-labelledby="retoqueTitulo">
+      <div class="contenedor foto-retoque__rejilla">
+        <div class="foto-retoque__texto">
+          <h2 class="seccion__titulo" id="retoqueTitulo">Del archivo sin editar a la foto que recibes</h2>
+          <p>La cámara guarda más información de la que se ve a simple vista. En la edición recuperamos el color real del momento y cuidamos que la piel conserve su textura.</p>
+          <ul class="lista-marcas">
+            <li>Balance de blancos ajustado a la luz de cada lugar.</li>
+            <li>Contraste por zonas, sin oscurecer los rostros.</li>
+            <li>Limpieza de distracciones pequeñas, nunca de rasgos.</li>
+            <li>Recortes listos para imprimir y para redes.</li>
+          </ul>
+          <div class="histograma" aria-hidden="true">
+            <svg class="histograma__svg" id="histograma" viewBox="0 0 240 70" preserveAspectRatio="none"></svg>
+            <div class="histograma__pie"><span>Sombras</span><span>Histograma</span><span>Luces</span></div>
+          </div>
+          <p class="nota">Arrastra la línea o usa las flechas del teclado. El histograma muestra cómo se reparten los tonos.</p>
+        </div>
+        <div class="comparador" id="comparador">
+          <img class="comparador__img" src="../img/familia-parque.svg" alt="Foto editada de una familia en el parque con colores cálidos y contraste definido" width="1200" height="800">
+          <img class="comparador__img comparador__img--crudo" src="../img/familia-parque.svg" alt="" width="1200" height="800" aria-hidden="true">
+          <span class="comparador__etiqueta comparador__etiqueta--antes" aria-hidden="true">Sin editar</span>
+          <span class="comparador__etiqueta comparador__etiqueta--despues" aria-hidden="true">Editada</span>
+          <span class="comparador__linea" aria-hidden="true"><span class="comparador__asa"></span></span>
+          <input class="comparador__rango" id="comparadorRango" type="range" min="0" max="100" value="50" aria-label="Comparar la foto sin editar con la editada">
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion foto-sesiones" id="sesiones" aria-labelledby="sesionesTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="sesionesTitulo">Sesiones y precios</h2>
+          <p>Cada paquete llega como sale del laboratorio: en su sobre, con todo lo que incluye escrito al frente. Precios en colones con IVA incluido; la fecha se aparta con el 30 %.</p>
+        </div>
+
+        <div class="sobres">
+          <article class="sobre">
+            <div class="sobre__foto" aria-hidden="true"><img src="../img/retrato-contraluz.svg" alt="" width="800" height="1000" loading="lazy"></div>
+            <div class="sobre__frente">
+              <h3 class="sobre__nombre">Retrato</h3>
+              <p class="sobre__precio"><span>₡65&nbsp;000</span> CRC</p>
+              <p class="sobre__desc">Perfiles profesionales, portafolios de actores o simplemente fotos tuyas que te gusten.</p>
+              <ul class="sobre__lista">
+                <li>1 hora en estudio o en exterior</li>
+                <li>2 cambios de ropa</li>
+                <li>25 fotos editadas</li>
+                <li>Galería privada en 10 días hábiles</li>
+              </ul>
+              <button class="boton boton--linea boton--bloque" type="button" data-cotizar="retrato">Cotizar retrato</button>
+            </div>
+          </article>
+          <article class="sobre">
+            <div class="sobre__foto" aria-hidden="true"><img src="../img/familia-parque.svg" alt="" width="1200" height="800" loading="lazy"></div>
+            <div class="sobre__frente">
+              <h3 class="sobre__nombre">Familia</h3>
+              <p class="sobre__precio"><span>₡80&nbsp;000</span> CRC</p>
+              <p class="sobre__desc">Al aire libre y sin poses rígidas. Los niños y las mascotas marcan el ritmo.</p>
+              <ul class="sobre__lista">
+                <li>90 minutos en parque o en casa</li>
+                <li>Hasta 6 personas y sus mascotas</li>
+                <li>40 fotos editadas</li>
+                <li>Una impresión de 30 × 40 cm</li>
+              </ul>
+              <button class="boton boton--linea boton--bloque" type="button" data-cotizar="familia">Cotizar sesión familiar</button>
+            </div>
+          </article>
+          <article class="sobre sobre--destacado">
+            <p class="sobre__sello">El más pedido</p>
+            <div class="sobre__foto" aria-hidden="true"><img src="../img/producto-perfume.svg" alt="" width="800" height="1000" loading="lazy"></div>
+            <div class="sobre__frente">
+              <h3 class="sobre__nombre">Producto</h3>
+              <p class="sobre__precio"><span>₡105&nbsp;000</span> CRC</p>
+              <p class="sobre__desc">Fondo blanco limpio y escenas con luz que cuentan cómo se usa lo que haces.</p>
+              <ul class="sobre__lista">
+                <li>Hasta 12 productos</li>
+                <li>20 fotos en fondo blanco y 6 ambientadas</li>
+                <li>Formatos para tienda y redes</li>
+                <li>Entrega en 5 días hábiles</li>
+              </ul>
+              <button class="boton boton--primario boton--bloque" type="button" data-cotizar="producto">Cotizar producto</button>
+            </div>
+          </article>
+          <article class="sobre">
+            <div class="sobre__foto" aria-hidden="true"><img src="../img/boda-arco.svg" alt="" width="800" height="1000" loading="lazy"></div>
+            <div class="sobre__frente">
+              <h3 class="sobre__nombre">Boda civil</h3>
+              <p class="sobre__precio"><span>₡255&nbsp;000</span> CRC</p>
+              <p class="sobre__desc">Registro civil, jardín o salón. Desde que se arreglan hasta el brindis.</p>
+              <ul class="sobre__lista">
+                <li>4 horas de cobertura</li>
+                <li>Sesión previa de 30 minutos</li>
+                <li>250 fotos editadas</li>
+                <li>Galería para compartir con invitados</li>
+              </ul>
+              <button class="boton boton--linea boton--bloque" type="button" data-cotizar="boda-civil">Cotizar boda civil</button>
+            </div>
+          </article>
+        </div>
+        <p class="nota foto-sesiones__nota">¿Boda con ceremonia religiosa y fiesta? La cobertura completa de 10 horas empieza en ₡650&nbsp;000 y puedes calcularla en el cotizador.</p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--tenue" id="cotiza" aria-labelledby="cotizaTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="cotizaTitulo">Cotiza en un minuto</h2>
+          <p>Elige el tipo de sesión y los extras. El recibo se imprime al momento con el total, el anticipo y la fecha de entrega.</p>
+        </div>
+
+        <div class="cotizador">
+          <form class="cotizador__form" id="cotizador" novalidate>
+            <fieldset class="campo-grupo">
+              <legend>Tipo de sesión</legend>
+              <div class="chips" id="tiposSesion">
+                <label class="chip"><input type="radio" name="tipo" value="retrato" checked><span>Retrato</span></label>
+                <label class="chip"><input type="radio" name="tipo" value="familia"><span>Familia</span></label>
+                <label class="chip"><input type="radio" name="tipo" value="producto"><span>Producto</span></label>
+                <label class="chip"><input type="radio" name="tipo" value="boda-civil"><span>Boda civil</span></label>
+                <label class="chip"><input type="radio" name="tipo" value="boda-completa"><span>Boda completa</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo">
+              <label for="horasExtra">Tiempo adicional</label>
+              <div class="contador" data-contador>
+                <button type="button" class="contador__boton" data-paso="-1" aria-label="Quitar una hora">−</button>
+                <input type="number" id="horasExtra" name="horas" value="0" min="0" max="6" inputmode="numeric">
+                <button type="button" class="contador__boton" data-paso="1" aria-label="Agregar una hora">+</button>
+              </div>
+              <p class="campo__ayuda" id="horasAyuda">Cada hora adicional de retrato cuesta ₡19&nbsp;000.</p>
+            </div>
+
+            <fieldset class="campo-grupo">
+              <legend>Extras</legend>
+              <div class="opciones" id="extras">
+                <label class="opcion"><input type="checkbox" name="extra" value="segundo"><span class="opcion__texto">Segundo fotógrafo<small>Otro ángulo de cada momento importante</small></span><span class="opcion__precio">+₡68&nbsp;000</span></label>
+                <label class="opcion"><input type="checkbox" name="extra" value="album"><span class="opcion__texto">Álbum impreso de 30 páginas<small>Tapa de lino, 25 × 25 cm</small></span><span class="opcion__precio">+₡86&nbsp;000</span></label>
+                <label class="opcion"><input type="checkbox" name="extra" value="expres"><span class="opcion__texto">Entrega exprés<small>Tu galería en 3 días hábiles</small></span><span class="opcion__precio">+₡24&nbsp;000</span></label>
+                <label class="opcion"><input type="checkbox" name="extra" value="maquillaje"><span class="opcion__texto">Maquillaje y peinado<small>Una persona, en el estudio</small></span><span class="opcion__precio">+₡32&nbsp;000</span></label>
+                <label class="opcion"><input type="checkbox" name="extra" value="traslado"><span class="opcion__texto">Fuera de la zona metropolitana<small>Chapala, Tequila, Tapalpa y similares</small></span><span class="opcion__precio">+₡22&nbsp;000</span></label>
+              </div>
+            </fieldset>
+
+            <div class="campo">
+              <label for="fechaCotiza">Fecha aproximada de la sesión</label>
+              <input type="date" id="fechaCotiza" name="fecha">
+              <p class="campo__ayuda">Con la fecha calculamos cuándo recibes tus fotos.</p>
+            </div>
+          </form>
+
+          <aside class="recibo" aria-labelledby="resumenTitulo">
+            <div class="recibo__papel">
+              <p class="recibo__marca">Azul Prusia<br><span>Laboratorio y estudio</span></p>
+              <h3 class="recibo__titulo" id="resumenTitulo">Tu cotización</h3>
+              <ul class="desglose" id="desglose"></ul>
+              <div class="recibo__total">
+                <span>Total</span>
+                <strong class="odometro" id="totalCotiza" aria-live="polite">₡65&nbsp;000</strong>
+              </div>
+              <p class="recibo__dato">Anticipo para apartar (30 %): <strong id="anticipoCotiza">₡19&nbsp;500</strong></p>
+              <p class="recibo__dato" id="entregaCotiza">Elige una fecha para calcular la entrega.</p>
+              <button class="boton boton--primario boton--bloque" type="button" id="usarCotizacion">Apartar con esta cotización</button>
+              <p class="visually-hidden" aria-live="polite" id="cotizaEstado"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion foto-proceso" id="proceso" aria-labelledby="procesoTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="procesoTitulo">Cómo trabajamos, cuadro por cuadro</h2>
+          <p>Del primer mensaje a la galería final, siempre sabes en qué cuadro del rollo vas.</p>
+        </div>
+      </div>
+      <div class="tira-caja">
+        <ol class="tira">
+          <li class="tira__cuadro">
+            <span class="tira__num">1</span>
+            <h3>Nos cuentas qué necesitas</h3>
+            <p>Una llamada de 15 minutos o un mensaje. Te sugerimos lugar, horario de mejor luz y vestuario.</p>
+          </li>
+          <li class="tira__cuadro">
+            <span class="tira__num">2</span>
+            <h3>Apartas tu fecha</h3>
+            <p>Con el 30 % de anticipo bloqueamos el día. Puedes cambiarlo una vez sin costo.</p>
+          </li>
+          <li class="tira__cuadro">
+            <span class="tira__num">3</span>
+            <h3>Hacemos la sesión</h3>
+            <p>Llegamos 30 minutos antes. Guiamos las poses sin que se note que estás posando.</p>
+          </li>
+          <li class="tira__cuadro">
+            <span class="tira__num">4</span>
+            <h3>Eliges tus favoritas</h3>
+            <p>En 72 horas recibes una galería de prueba para marcar las que más te gustan.</p>
+          </li>
+          <li class="tira__cuadro">
+            <span class="tira__num">5</span>
+            <h3>Recibes la galería final</h3>
+            <p>Fotos en alta resolución para descargar, disponibles en línea durante un año.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion seccion--tenue" id="estudio" aria-labelledby="estudioTitulo">
+      <div class="contenedor foto-estudio">
+        <figure class="foto-estudio__figura">
+          <img class="foto-estudio__img" src="../img/estudio.svg" alt="Set del estudio con un fondo de papel claro, una luz con softbox y una cámara sobre tripié" width="1200" height="800" loading="lazy">
+        </figure>
+        <div class="foto-estudio__texto">
+          <h2 class="seccion__titulo" id="estudioTitulo">El estudio</h2>
+          <p>Una casa de los años cuarenta en la colonia Americana con ventanales al poniente. Por la tarde entra una luz suave que usamos para retrato; para producto tenemos un set cerrado con luz controlada.</p>
+          <ul class="lista-marcas">
+            <li>Fondos de papel en seis colores.</li>
+            <li>Vestidor con espejo y plancha de vapor.</li>
+            <li>Acceso a nivel de calle para carriolas y sillas de ruedas.</li>
+            <li>Estacionamiento para dos autos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="reserva" aria-labelledby="reservaTitulo">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <h2 class="seccion__titulo" id="reservaTitulo">Aparta tu fecha</h2>
+          <p>Elige un día libre, un horario y déjanos tus datos. Te confirmamos por correo o WhatsApp en menos de 24 horas.</p>
+        </div>
+
+        <div class="reserva">
+          <div class="calendario" id="calendario">
+            <div class="calendario__cabeza">
+              <button class="calendario__nav" type="button" id="mesAnterior" aria-label="Mes anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <h3 class="calendario__mes" id="mesTitulo" aria-live="polite">Mes</h3>
+              <button class="calendario__nav" type="button" id="mesSiguiente" aria-label="Mes siguiente">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <div class="calendario__semana" aria-hidden="true">
+              <span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span>
+            </div>
+            <div class="calendario__dias" id="calendarioDias" role="grid" aria-labelledby="mesTitulo"></div>
+            <ul class="calendario__leyenda">
+              <li><span class="punto punto--libre"></span>Libre</li>
+              <li><span class="punto punto--pocos"></span>Pocos horarios</li>
+              <li><span class="punto punto--lleno"></span>Sin lugar</li>
+            </ul>
+          </div>
+
+          <form class="reserva__form" id="formReserva" novalidate>
+            <div class="campo">
+              <span class="campo__etiqueta" id="horarioEtiqueta">Horario</span>
+              <div class="horarios" id="horarios" role="radiogroup" aria-labelledby="horarioEtiqueta">
+                <p class="horarios__vacio">Primero elige un día en el calendario.</p>
+              </div>
+              <p class="campo__error" id="errorHorario"></p>
+            </div>
+            <div class="campo">
+              <label for="resNombre">Nombre completo</label>
+              <input id="resNombre" name="nombre" type="text" autocomplete="name" required minlength="3" maxlength="80">
+              <p class="campo__error" id="errorNombre"></p>
+            </div>
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="resCorreo">Correo</label>
+                <input id="resCorreo" name="correo" type="email" autocomplete="email" required maxlength="120">
+                <p class="campo__error" id="errorCorreo"></p>
+              </div>
+              <div class="campo">
+                <label for="resTelefono">WhatsApp</label>
+                <input id="resTelefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required placeholder="33 1234 5678" maxlength="20">
+                <p class="campo__error" id="errorTelefono"></p>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="resTipo">Tipo de sesión</label>
+              <select id="resTipo" name="tipo">
+                <option value="retrato">Retrato</option>
+                <option value="familia">Familia</option>
+                <option value="producto">Producto</option>
+                <option value="boda-civil">Boda civil</option>
+                <option value="boda-completa">Boda completa</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="resMensaje">Cuéntanos de la sesión <span class="opcional">(opcional)</span></label>
+              <textarea id="resMensaje" name="mensaje" rows="3" maxlength="500" placeholder="Lugar que tienes en mente, cuántas personas, ideas de vestuario"></textarea>
+            </div>
+            <div class="reserva__cotizacion" id="reservaCotizacion" hidden></div>
+            <input class="trampa" type="text" name="sitio" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="boton boton--primario boton--bloque" type="submit">Solicitar esta fecha</button>
+          </form>
+        </div>
+
+        <div class="confirmacion" id="confirmacion" tabindex="-1" hidden>
+          <svg class="confirmacion__icono" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 class="confirmacion__titulo">Solicitud lista</h3>
+          <p id="confirmacionTexto"></p>
+          <dl class="confirmacion__datos" id="confirmacionDatos"></dl>
+          <div class="acciones">
+            <a class="boton boton--primario" id="confirmacionCorreo" href="#">Enviar por correo</a>
+            <button class="boton boton--linea" type="button" id="confirmacionIcs">Descargar recordatorio</button>
+            <button class="boton boton--texto" type="button" id="confirmacionOtra">Hacer otra solicitud</button>
+          </div>
+          <p class="nota">Esta página no guarda tus datos en ningún servidor: el botón de correo abre tu aplicación con el mensaje listo para enviarlo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--tenue" id="preguntas" aria-labelledby="preguntasTitulo">
+      <div class="contenedor contenedor--angosto">
+        <h2 class="seccion__titulo" id="preguntasTitulo">Preguntas frecuentes</h2>
+        <div class="acordeon">
+          <details>
+            <summary>¿Qué pasa si llueve el día de una sesión en exterior?</summary>
+            <p>Te avisamos un día antes si el pronóstico es malo y movemos la sesión a otra fecha libre o al estudio, sin costo.</p>
+          </details>
+          <details>
+            <summary>¿Nos entregan todas las fotos que toman?</summary>
+            <p>Entregamos las mejores, ya editadas. En una sesión de retrato tomamos unas 300 y elegimos juntos las 25 que se editan; si quieres más, cada foto adicional cuesta ₡3&nbsp;200.</p>
+          </details>
+          <details>
+            <summary>¿Puedo llevar a mi perro o gato?</summary>
+            <p>Sí. En sesiones familiares las mascotas cuentan como parte de la familia y no tienen costo extra.</p>
+          </details>
+          <details>
+            <summary>¿Qué formas de pago aceptan?</summary>
+            <p>Transferencia, tarjeta de débito o crédito en el estudio y efectivo. Emitimos factura si la necesitas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <div class="pie__marca">
+        <p class="pie__nombre">Azul Prusia</p>
+        <p>Estudio de fotografía de retrato, bodas, familia y producto en Guadalajara, Jalisco.</p>
+        <a class="pie__arriba" href="#inicio">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 16V8M8 11.5 12 7.5l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Volver arriba
+        </a>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Ubicación</h2>
+        <p>Calle Libertad 1820, Col. Americana, Guadalajara, Jal.</p>
+        <p>A dos cuadras de la avenida Chapultepec.</p>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Horario</h2>
+        <ul class="pie__lista">
+          <li>Martes a sábado, 10:00 a 19:00</li>
+          <li>Domingo, solo bodas y eventos</li>
+          <li id="pieEstado" class="pie__estado"></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="pie__titulo">Contacto</h2>
+        <ul class="pie__lista">
+          <li><a href="mailto:hola@azulprusia.mx">hola@azulprusia.mx</a></li>
+          <li><a href="tel:+523336152048">33 3615 2048</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="pie__rotulo" aria-hidden="true">Azul Prusia</p>
+    <div class="contenedor pie__legal">
+      <p>© 2026 Azul Prusia. Proyecto académico de Desarrollo Web I.</p>
+      <p>Ilustraciones hechas en SVG para este sitio.</p>
+    </div>
+  </footer>
+
+  <div class="enfoque" id="enfoque" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <i class="enfoque__punto"></i>
+  </div>
+  <div class="destello" id="destello" aria-hidden="true"></div>
+
+  <dialog class="visor" id="visor" aria-labelledby="visorTitulo">
+    <div class="visor__marco">
+      <div class="visor__escena">
+        <img class="visor__img" id="visorImg" src="../img/retrato-ventana.svg" alt="">
+      </div>
+      <aside class="visor__ficha">
+        <p class="visor__conteo" id="visorConteo"></p>
+        <h2 class="visor__titulo" id="visorTitulo"></h2>
+        <p class="visor__lugar" id="visorLugar"></p>
+        <dl class="visor__exif">
+          <div><dt>Lente</dt><dd id="exifLente"></dd></div>
+          <div><dt>Apertura</dt><dd id="exifApertura"></dd></div>
+          <div><dt>Velocidad</dt><dd id="exifVelocidad"></dd></div>
+          <div><dt>ISO</dt><dd id="exifIso"></dd></div>
+        </dl>
+        <div class="visor__tira" id="visorTira"></div>
+        <p class="visor__ayuda">Usa las flechas del teclado o desliza para cambiar de foto.</p>
+      </aside>
+      <button class="visor__boton visor__boton--cerrar" type="button" id="visorCerrar" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="visor__boton visor__boton--prev" type="button" id="visorPrev" aria-label="Foto anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="visor__boton visor__boton--sig" type="button" id="visorSig" aria-label="Foto siguiente">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </dialog>
+</body>
+</html>

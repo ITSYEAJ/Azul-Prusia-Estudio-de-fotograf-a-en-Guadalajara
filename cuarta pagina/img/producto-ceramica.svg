@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Jarro de barro bruñido de Tonalá sobre una mesa de madera">
+<title>Jarro de barro bruñido de Tonalá sobre una mesa de madera</title>
+<defs>
+<filter id="suave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="muysuave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+<radialGradient id="vineta" cx=".5" cy=".5" r=".75"><stop offset=".58" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient><radialGradient id="p9barro" cx=".35" cy=".35" r=".8"><stop offset="0" stop-color="#ecd4ad"/><stop offset=".6" stop-color="#cfa877"/><stop offset="1" stop-color="#8e6a45"/></radialGradient>
+<linearGradient id="p9pared" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8c6c4"/><stop offset="1" stop-color="#8fa3a3"/></linearGradient>
+<linearGradient id="p9mesa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5c3b"/><stop offset="1" stop-color="#5a3a24"/></linearGradient></defs>
+<rect width="1200" height="640" fill="url(#p9pared)"/>
+<path d="M120 0h330l120 640H240z" fill="#fff6e0" opacity=".25"/>
+<rect y="630" width="1200" height="170" fill="url(#p9mesa)"/>
+<g stroke="#4a2e1b" stroke-width="2" opacity=".45" fill="none"><path d="M0 668c300-10 700 8 1200-4"/><path d="M0 716c260 6 600-12 1200 6"/><path d="M0 764c400-8 800 10 1200-2"/></g>
+<ellipse cx="620" cy="706" rx="190" ry="26" fill="#2a170c" opacity=".45" filter="url(#suave)"/>
+<ellipse cx="310" cy="712" rx="170" ry="24" fill="#2a170c" opacity=".35" filter="url(#suave)"/>
+<ellipse cx="300" cy="690" rx="160" ry="38" fill="#d3b287"/>
+<ellipse cx="300" cy="684" rx="126" ry="26" fill="#e6cda6"/>
+<ellipse cx="300" cy="684" rx="100" ry="19" fill="none" stroke="#4f6177" stroke-width="3"/>
+<ellipse cx="300" cy="684" rx="58" ry="10" fill="none" stroke="#4f6177" stroke-width="2" stroke-dasharray="8 6"/>
+<path d="M736 424C816 418 834 548 748 614" fill="none" stroke="#b58c5d" stroke-width="24" stroke-linecap="round"/><path d="M742 432C804 432 818 540 752 600" fill="none" stroke="#e8c99a" stroke-width="5" opacity=".5" stroke-linecap="round"/>
+<path d="M560 330C560 360 548 382 528 410C458 470 448 600 498 660C530 692 570 702 620 702C670 702 710 692 742 660C792 600 782 470 712 410C692 382 680 360 680 330Z" fill="url(#p9barro)"/>
+<ellipse cx="620" cy="330" rx="60" ry="12" fill="#6e4f32"/>
+<ellipse cx="620" cy="328" rx="52" ry="8" fill="#3d2a1a"/>
+<g fill="none" stroke="#4f6177" stroke-linecap="round">
+<path d="M500 470C560 486 680 486 740 470" stroke-width="4"/>
+<path d="M486 600C560 620 680 620 754 600" stroke-width="4"/>
+<path d="M560 540c14-18 30-18 40-4 10-14 26-14 40 4" stroke-width="3"/>
+<path d="M600 536c-6-20 4-34 20-40M640 536c6-20-4-34-20-40" stroke-width="2.5"/>
+<path d="M520 520c10 8 10 24 0 34M720 520c-10 8-10 24 0 34" stroke-width="3"/>
+<path d="M540 380h160" stroke-width="3"/>
+</g>
+<g fill="#4f6177"><circle cx="560" cy="570" r="4"/><circle cx="620" cy="578" r="4"/><circle cx="680" cy="570" r="4"/><circle cx="590" cy="440" r="3"/><circle cx="650" cy="440" r="3"/></g>
+<path d="M500 460C486 520 488 600 520 650" fill="none" stroke="#fff3dd" stroke-width="8" opacity=".35" stroke-linecap="round"/>
+<rect width="1200" height="800" fill="url(#vineta)"/>
+</svg>

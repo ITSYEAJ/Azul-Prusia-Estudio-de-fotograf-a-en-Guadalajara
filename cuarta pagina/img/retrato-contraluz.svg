@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Retrato de perfil a contraluz al atardecer">
+<title>Retrato de perfil a contraluz al atardecer</title>
+<defs>
+<filter id="suave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="muysuave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+<radialGradient id="vineta" cx=".5" cy=".5" r=".75"><stop offset=".58" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient><linearGradient id="c2cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#28406f"/><stop offset=".45" stop-color="#b86a5c"/><stop offset=".72" stop-color="#f0a35e"/><stop offset="1" stop-color="#f8d488"/></linearGradient>
+<radialGradient id="c2sol" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 590) scale(440)"><stop offset="0" stop-color="#fff6d8"/><stop offset=".1" stop-color="#ffe3a0" stop-opacity=".95"/><stop offset=".45" stop-color="#f7b566" stop-opacity=".35"/><stop offset="1" stop-color="#f7b566" stop-opacity="0"/></radialGradient></defs>
+<rect width="800" height="1000" fill="url(#c2cielo)"/>
+<rect width="800" height="1000" fill="url(#c2sol)"/>
+<circle cx="240" cy="590" r="44" fill="#fffaf0"/>
+<path d="M0 820C120 790 220 800 330 780S560 760 800 800V1000H0Z" fill="#6a3f45" opacity=".75"/>
+<path d="M0 880C160 850 300 870 460 850S700 860 800 870V1000H0Z" fill="#3b2430"/>
+<path d="M250 1000C260 880 320 800 400 770C420 730 410 690 400 660C370 620 350 560 355 500C360 380 450 300 540 305C620 310 670 370 672 440C674 470 668 490 676 505L710 560C712 570 700 578 684 580L690 600C694 606 686 612 682 614L688 628C690 640 680 648 672 650C676 670 672 690 650 700C630 710 600 712 590 714C585 740 590 760 600 780C680 800 740 860 760 1000Z" fill="#1d1219"/>
+<path d="M355 500C360 380 450 300 540 305C620 310 670 370 672 440" fill="none" stroke="#ffd08f" stroke-width="4" stroke-opacity=".7" stroke-linecap="round"/>
+<path d="M400 660C370 620 350 560 355 500" fill="none" stroke="#ffe2b0" stroke-width="6" stroke-opacity=".75" stroke-linecap="round"/>
+<path d="M250 1000C260 880 320 800 400 770" fill="none" stroke="#ffd08f" stroke-width="4" stroke-opacity=".6"/>
+<path d="M350 520C340 430 380 330 470 300C520 284 590 286 640 316C668 334 686 366 690 400C676 388 664 382 652 384C640 362 612 348 582 350C560 332 522 332 500 346C470 354 442 382 422 422C404 460 394 500 390 540C372 540 356 532 350 520Z" fill="#1a0f16"/>
+<path d="M352 518C342 430 382 332 470 302C520 286 590 288 640 318C664 334 682 362 688 392" fill="none" stroke="#ffd08f" stroke-width="3.5" stroke-opacity=".75" stroke-linecap="round"/>
+<g><circle cx="108" cy="425" r="12" fill="#ffe0a0" opacity="0.35"/><circle cx="48" cy="350" r="26" fill="#9fd0e6" opacity="0.16"/><circle cx="-24" cy="260" r="8" fill="#ffd6a0" opacity="0.4"/></g>
+<rect width="800" height="1000" fill="url(#vineta)"/>
+</svg>

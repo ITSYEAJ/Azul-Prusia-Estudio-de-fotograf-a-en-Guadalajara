@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Set del estudio con fondo de papel, softbox y cámara en tripié">
+<title>Set del estudio con fondo de papel, softbox y cámara en tripié</title>
+<defs>
+<filter id="suave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="muysuave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+<radialGradient id="vineta" cx=".5" cy=".5" r=".75"><stop offset=".58" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient><linearGradient id="e12fondo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d1db"/><stop offset=".72" stop-color="#e3e7ec"/><stop offset="1" stop-color="#b8c0cb"/></linearGradient>
+<radialGradient id="e12luz" cx=".28" cy=".45" r=".5"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="e12softbox" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fdfdfc"/><stop offset="1" stop-color="#e8ecef"/></linearGradient></defs>
+<rect width="1200" height="800" fill="#1B3A6B"/>
+<rect x="0" y="0" width="1200" height="40" fill="#15305a"/>
+<rect x="330" y="40" width="560" height="26" rx="13" fill="#2d2f36"/>
+<path d="M350 66H870V560C870 640 900 700 1000 720V800H220V720C320 700 350 640 350 560Z" fill="url(#e12fondo)"/>
+<rect width="1200" height="800" fill="url(#e12luz)"/>
+<path d="M530 600h110l-10 12H540z" fill="#30333a"/>
+<path d="M548 612l-14 120M622 612l14 120M585 612v124" stroke="#30333a" stroke-width="8" stroke-linecap="round"/>
+<ellipse cx="585" cy="742" rx="80" ry="10" fill="#6a7483" opacity=".4" filter="url(#suave)"/>
+<path d="M200 800L215 440M215 440l-40 360M215 440l40 360" stroke="#26282e" stroke-width="7" stroke-linecap="round"/>
+<path d="M215 440L230 380" stroke="#26282e" stroke-width="8"/>
+<path d="M150 250L320 190L320 450L150 390Z" fill="#1f2126"/>
+<path d="M320 190L360 240V400L320 450Z" fill="url(#e12softbox)"/>
+<path d="M320 190L360 240V400L320 450Z" fill="#ffffff" opacity=".6" filter="url(#suave)"/>
+<path d="M1010 800L1000 560M1000 560L950 800M1000 560L1060 800" stroke="#1a1c22" stroke-width="9" stroke-linecap="round"/>
+<rect x="990" y="530" width="22" height="34" fill="#1a1c22"/>
+<rect x="930" y="450" width="150" height="90" rx="10" fill="#22252c"/>
+<rect x="960" y="430" width="60" height="26" rx="4" fill="#22252c"/>
+<rect x="880" y="462" width="60" height="66" rx="8" fill="#2d3038"/>
+<circle cx="880" cy="495" r="30" fill="#15171b"/>
+<circle cx="880" cy="495" r="18" fill="#2e4a7a"/>
+<circle cx="874" cy="489" r="6" fill="#9cc0f0" opacity=".7"/>
+<rect x="1050" y="440" width="18" height="8" rx="2" fill="#E3A33B"/>
+</svg>

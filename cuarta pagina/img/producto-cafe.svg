@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" role="img" aria-label="Fotografía de producto de una bolsa de café y una taza">
+<title>Fotografía de producto de una bolsa de café y una taza</title>
+<defs>
+<filter id="suave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="muysuave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+<radialGradient id="vineta" cx=".5" cy=".5" r=".75"><stop offset=".58" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient><linearGradient id="p7bolsa" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8895a"/><stop offset=".45" stop-color="#d4a877"/><stop offset="1" stop-color="#8f6640"/></linearGradient>
+<linearGradient id="p7taza" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f7f4ef"/><stop offset=".6" stop-color="#e6e0d6"/><stop offset="1" stop-color="#b9b0a3"/></linearGradient>
+<linearGradient id="p7pared" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eeb04d"/><stop offset="1" stop-color="#e29c33"/></linearGradient></defs>
+<rect width="1000" height="660" fill="url(#p7pared)"/>
+<rect y="660" width="1000" height="340" fill="#d08a2b"/>
+<rect y="656" width="1000" height="8" fill="#f2b95a" opacity=".6"/>
+<g fill="#7a4a10" opacity=".14"><path d="M560 0h120L420 660H300z"/><path d="M760 0h90L610 660H520z"/></g>
+<path d="M420 780L610 770L660 700L430 700Z" fill="#6b3f0c" opacity=".22" filter="url(#suave)"/>
+<path d="M760 770L940 760L960 720L770 720Z" fill="#6b3f0c" opacity=".22" filter="url(#suave)"/>
+<path d="M186 340H402L414 372L424 780H170L178 372Z" fill="url(#p7bolsa)"/>
+<path d="M186 340H402L408 356H180Z" fill="#8c6238"/>
+<path d="M180 356h228" stroke="#6e4b2a" stroke-width="2" stroke-dasharray="6 4"/>
+<path d="M196 400c-4 120-6 240-8 360" stroke="#f0d2a8" stroke-width="6" opacity=".35" stroke-linecap="round"/>
+<rect x="206" y="470" width="186" height="178" fill="#f5f1ea"/>
+<rect x="206" y="470" width="186" height="178" fill="none" stroke="#1B3A6B" stroke-width="3"/>
+<text x="299" y="514" text-anchor="middle" font-family="Arial Narrow, Arial, sans-serif" font-size="18" letter-spacing="4" fill="#1B3A6B">TUESTE</text>
+<text x="299" y="566" text-anchor="middle" font-family="Georgia, serif" font-size="50" fill="#1B3A6B">Norte</text>
+<path d="M240 584h118" stroke="#1B3A6B" stroke-width="2"/>
+<text x="299" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#3b4a60">Chiapas, 1450 m</text>
+<text x="299" y="632" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#3b4a60">250 g</text>
+<ellipse cx="660" cy="768" rx="176" ry="36" fill="#f3efe9"/>
+<ellipse cx="660" cy="762" rx="120" ry="22" fill="#e2dbd0"/>
+<path d="M776 632C842 630 844 716 770 720" fill="none" stroke="#e9e3da" stroke-width="22" stroke-linecap="round"/>
+<path d="M540 600H780C780 700 740 760 660 762C580 760 540 700 540 600Z" fill="url(#p7taza)"/>
+<ellipse cx="660" cy="600" rx="120" ry="26" fill="#faf8f4"/>
+<ellipse cx="660" cy="604" rx="106" ry="20" fill="#5a3622"/>
+<ellipse cx="660" cy="605" rx="90" ry="15" fill="#8a5a33"/>
+<path d="M660 616c-18-8-34-14-30-22 3-6 18-4 30 4 12-8 27-10 30-4 4 8-12 14-30 22z" fill="#f1e2cc"/>
+<g fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".32" filter="url(#suave)"><path d="M620 570c-30-40 30-70 0-120s20-70 0-100"/><path d="M668 560c-26-44 34-72 4-124s24-60 4-96"/><path d="M712 572c-24-36 26-64 0-110"/></g>
+<g fill="#4a2a14"><ellipse cx="470" cy="820" rx="14" ry="9" transform="rotate(-20 470 820)"/><ellipse cx="500" cy="840" rx="14" ry="9" transform="rotate(30 500 840)"/><ellipse cx="850" cy="850" rx="14" ry="9" transform="rotate(10 850 850)"/><ellipse cx="880" cy="826" rx="14" ry="9" transform="rotate(-40 880 826)"/></g>
+<g stroke="#2a170a" stroke-width="2" stroke-linecap="round"><path d="M462 824l16-8M494 834l12 10M842 850h16M874 832l12-10"/></g>
+</svg>

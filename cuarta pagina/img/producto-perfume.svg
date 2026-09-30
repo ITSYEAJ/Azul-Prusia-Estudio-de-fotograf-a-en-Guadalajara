@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Frasco de perfume ámbar sobre un pedestal">
+<title>Frasco de perfume ámbar sobre un pedestal</title>
+<defs>
+<filter id="suave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="muysuave" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="20"/></filter>
+<radialGradient id="vineta" cx=".5" cy=".5" r=".75"><stop offset=".58" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></radialGradient><linearGradient id="p8fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cc0c2"/><stop offset="1" stop-color="#2a6672"/></linearGradient>
+<linearGradient id="p8pedestal" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9d3c9"/><stop offset=".4" stop-color="#f3efe8"/><stop offset="1" stop-color="#a9a298"/></linearGradient>
+<linearGradient id="p8vidrio" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".5"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".12"/><stop offset="1" stop-color="#ffffff" stop-opacity=".4"/></linearGradient>
+<linearGradient id="p8liquido" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c06a"/><stop offset="1" stop-color="#c0661f"/></linearGradient>
+<linearGradient id="p8tapa" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a3d44"/><stop offset=".3" stop-color="#15171b"/><stop offset=".8" stop-color="#2a2d33"/><stop offset="1" stop-color="#0c0d10"/></linearGradient></defs>
+<rect width="800" height="1000" fill="url(#p8fondo)"/>
+<circle cx="560" cy="300" r="220" fill="#bfe6e2" opacity=".35" filter="url(#muysuave)"/>
+<rect x="170" y="760" width="460" height="240" fill="url(#p8pedestal)"/>
+<ellipse cx="400" cy="760" rx="230" ry="46" fill="#f6f3ee"/>
+<ellipse cx="450" cy="770" rx="130" ry="20" fill="#1c4a52" opacity=".28" filter="url(#suave)"/>
+<ellipse cx="470" cy="772" rx="70" ry="14" fill="#f2a64e" opacity=".55" filter="url(#suave)"/>
+<rect x="370" y="410" width="60" height="48" fill="#e9d2a8" opacity=".6"/>
+<rect x="300" y="450" width="200" height="306" rx="26" fill="url(#p8vidrio)" stroke="#ffffff" stroke-opacity=".7" stroke-width="3"/>
+<rect x="316" y="522" width="168" height="218" rx="16" fill="url(#p8liquido)" opacity=".92"/>
+<rect x="316" y="522" width="168" height="8" rx="4" fill="#ffe0a3"/>
+<rect x="346" y="330" width="108" height="86" rx="8" fill="url(#p8tapa)"/>
+<rect x="356" y="338" width="8" height="70" rx="4" fill="#ffffff" opacity=".35"/>
+<rect x="340" y="592" width="120" height="70" fill="#f7f1e6" opacity=".92"/>
+<text x="400" y="624" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#5a3a1c">Ámbar</text>
+<text x="400" y="648" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" letter-spacing="3" fill="#5a3a1c">07</text>
+<rect x="318" y="468" width="14" height="266" rx="7" fill="#ffffff" opacity=".5"/>
+<rect x="474" y="478" width="6" height="240" rx="3" fill="#ffffff" opacity=".45"/>
+<rect width="800" height="1000" fill="url(#vineta)"/>
+</svg>
