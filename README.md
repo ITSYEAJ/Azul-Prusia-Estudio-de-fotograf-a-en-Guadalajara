@@ -1,7 +1,4 @@
 # Azul Prusia: estudio de fotografía
-
-Página 4 de la práctica de **gráficos con canvas** del curso Desarrollo Web I. Es el sitio de un estudio de retrato, bodas, sesiones familiares y fotografía de producto en la colonia Americana de Guadalajara.
-
 | | |
 |---|---|
 | **Tema** | Servicio de fotografía |
